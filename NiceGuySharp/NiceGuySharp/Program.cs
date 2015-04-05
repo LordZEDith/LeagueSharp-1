@@ -62,10 +62,10 @@ namespace NiceGuySharp
                 Game.Say(onGameStart[randMessage]);
             }
 
-            Game.OnGameUpdate += Game_OnGameUpdate;
+            Game.OnUpdate += Game_OnUpdate;
         }
 
-        public static void Game_OnGameUpdate(EventArgs args)
+        public static void Game_OnUpdate(EventArgs args)
         {
             if (MyHero.Deaths > Deaths)
             {
@@ -198,7 +198,7 @@ namespace NiceGuySharp
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                Game.OnGameUpdate -= Game_OnGameUpdate;
+                Game.OnUpdate -= Game_OnUpdate;
             }
         }
 
