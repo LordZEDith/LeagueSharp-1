@@ -7,7 +7,7 @@ namespace NiceGuySharp
 {
     internal class FileHandler
     {
-        public static string (!Directory.Exists(Config.LeagueSharpDirectory + @"\NiceGuySharp\";)
+        public static string !Directory.Exists(Config.LeagueSharpDirectory + @"\NiceGuySharp\";
 
 
         public static string OnGameStartTxt;
